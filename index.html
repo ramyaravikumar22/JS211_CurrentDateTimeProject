@@ -2,14 +2,95 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <script src="main.js"></script>
+    <title>JS211 Date and Time Project</title>
+    
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <h1>Date/Time & Operators</h1>
     <hr/>
+    <h3>Current Date & Time</h3>
     <div id="display-element"></div>
+    <br>
+    <label>Click here to see the current date/time for the location</label>
     <button onclick="displayDate()">Click Me</button>
-    <hr/>
+    <br>
+    <hr>
+  
+    <!--convert number to string-->
+    <h3>Number to string</h3>
+    <input type="number" id="value1" name="value1">
+    <button type="button" onclick="numberToString()">Convert</button>
+    <p id="numbertostring"></p>
+
+    <!--convert string to number-->
+    <hr>
+    <h3>String to number</h3>
+    <input type="text" id="num" />
+    <button onclick="stringToNum()">String to Num</button>
+    <div id="stringToNum"></div>
+    </hr>
+    
+    <!--Adding numbers-->
+    <hr>
+    <h3>Adding two numbers</h3>
+    <label>Enter the numbers </label> </br>
+    <input type="number" id="num1"/>
+    <input type="number" id="num2" />
+    <button onclick="addTwoNumbers()">Add</button>
+    </br>
+    <div id="Total"></div>
+
+    <hr>
+    <!-- And operator logic-->
+    <h4>When two values are true</h4>
+    <label for="oneTrueValue">Choose a value:</label>
+    <select id="oneTrueValue">
+      <option value="true">true</option>
+      <option value="false">false</option>
+    </select>
+    <label for="secondTrueValue">Choose second value:</label>
+    <select id="secondTrueValue">
+      <option value="true">true</option>
+      <option value="false">false</option>
+    </select>
+  </br>
+</br>
+    <button onclick="twoTrueValue()">Submit</button>
+    <div id="printTrueValue"></div>
+    <hr>
+
+    <!-- OR Operator logic -->
+    <h4>When one of two values are true</h4>
+    <label for="oneValue">Choose a value:</label>
+    <select id="oneValue">
+      <option value = "true">true</option>
+      <option value = "false">false</option>
+    </select>
+    <label for="twoValue">Choose second value:</label>
+    <select id="twoValue">
+      <option value = "true">true</option>
+      <option value = "false">false</option>
+    </select>
+  </br>
+    </br>
+    <button onclick="oneTrueValue()">Submit</button>
+      <div id="printValue"></div>
+      <hr>
+  
+    <!-- Both things are not true-->
+    <h4>Return a false value</h4>
+    <select id="valueA">
+      <option value="true">true</option>
+      <option value="false">false</option>
+    </select>
+    <select id="valueB">
+      <option value="true">true</option>
+      <option value="false">false</option>
+    </select>
+    <button onclick="notTrueValue()">Submit</button>
+    <div id="printFalseValue"></div>
+
+    <script src="main.js"></script>
   </body>
 </html>
+
